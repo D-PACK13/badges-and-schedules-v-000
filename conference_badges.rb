@@ -16,3 +16,13 @@ def assign_rooms(speakers)
   return greet
 end
 
+def printer(attendees)
+  resultOne = batch_badge_creator(attendees)
+  resultOne.each do |x|
+    puts x 
+  end
+  result = assign_rooms(attendees)
+  result.each do |x|
+    puts x 
+  end
+end
